@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Proj2 by Daniel Domingo</title>
+    <script src='javascripts/globalVars.js'></script>
+    <script src='javascripts/model/Person.js'></script>
+    <script src='javascripts/view/ListView.js'></script>
+    <script src='javascripts/control/PersonPageControl.js'></script>
+
+    <style>
+      div {border-style: groove;}
+      .botBar {
+        display: flex;
+        flex-direction: row;
+      }
+      table, th, td {border: 1px solid black}
+    </style>
+  </head>
+
+  <body id = 'b-id'>
+    <div class='topBar'>
+    	Last Name: <input id='ln_id' type='text' name='last_name'>
+    	<input id='search_person_id' type='submit' value='Search'>
+    </div>
+
+    <div class='botBar'>
+      <div class='searchResults'>
+        <p>Students Found:</p>
+        <ul id='person_list_id'>
+      	</ul>
+      </div>
+      <div class='resultInfo'>
+        <p id="p_studGrade_id">Grades for Student:</p>
+        <table id="table_1">
+          <tr>
+            <th id="Course"> Course </th>
+            <th id="GPA"> GPA </th>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+  <script>
+  	// Create test data (an array of Person objects)
+  	/*
+  	var person_list = new Array();
+  	person_list.push(new test.model.Person('John', 'Chen'));
+  	person_list.push(new test.model.Person('Amy', 'Sampson'));
+  	person_list.push(new test.model.Person('George', 'Kershaw'));
+  	*/
+  	//
+  	/*
+  	var list_view = new test.view.ListView(person_list);
+  	list_view.addToParent(document.getElementById('b-id'));
+  	*/
+  	console.log(test);
+  </script>
+</html>
