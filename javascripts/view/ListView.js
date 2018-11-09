@@ -22,8 +22,7 @@ test = ( function () {
 
 			var li_content = document.createTextNode(this.content[i].getString());
 			li_node.appendChild(li_content);
-			this.root.appendChild(li_node); // ?
-			document.getElementById("person_list_id").appendChild(li_node);
+			this.root.appendChild(li_node); // same as document.getElementById("person_list_id").appendChild(li_node);
 			//set onclick for li item (Function called is from Control)
 			document.getElementById("li_Student_id_" + i).onclick = function() {studInfo(pplList, this.id)};
 		}
